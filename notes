@@ -1,0 +1,16 @@
+you can mark a test file using '.test' that way 'npm test' will be able to recognize and run your tests.
+describe() is used for containing file test cases marked with it() these are for functions that are within a file
+expect() is used to specify the expected result you are testing for
+
+the process of building a test case, is to first build the dummy data to be passed into the function being tested then add an expected result ex:
+testing a function called addTwoNumbers(x,y)
+the function takes two parameters "x" and "y"
+so in our dummy data we can pass in addTwoNumbers(1, 2)
+then we can expect the result to equal 3 like this
+expect(addTwoNumbers(1,2)).to.equal(3);
+
+there are a good many other functions which you can find here "https://jestjs.io/docs/expect" to help.
+
+
+
+TDD is an acronym for Test Driven Development. This means that when you want to add a new feature, you first implement a test to verify said feature will work at this point it should fail, this is called the red phase. Next you move onto the green phase, this is the point where you write the code to make the feature, the goal in this phase is to make the test pass while making the smallest amount of changes to your code possible, so that errors are easier to track and handle. 
